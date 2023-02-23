@@ -27,30 +27,6 @@ public interface MapStructMapper
 	EmployeeEntity employeeDTOtoEmployeeEntity(EmployeeDTO    employee, MapStructCycleTrackingContext context);
 	EmployeeDTO    employeeEntityToEmployeeDTO(EmployeeEntity employee, MapStructCycleTrackingContext context);
 
-//	@ObjectFactory default DepartmentDTO createDepartmentDTO(
-//			@NonNull DepartmentEntity department, @NonNull @Context MapStructMapper.MapStructCycleTrackingContext context)
-//	{
-//		return new DepartmentDTO(department, context);
-//	}
-//
-//	@ObjectFactory default DepartmentEntity createDepartmentEntity(
-//			@NonNull DepartmentDTO department, @NonNull @Context MapStructMapper.MapStructCycleTrackingContext context)
-//	{
-//		return new DepartmentEntity(department, context);
-//	}
-//
-//	@ObjectFactory default EmployeeDTO createEmployeeDTO(
-//			@NonNull EmployeeEntity employee, @NonNull @Context MapStructMapper.MapStructCycleTrackingContext context)
-//	{
-//		return new EmployeeDTO(employee, context);
-//	}
-//
-//	@ObjectFactory default EmployeeEntity createEmployeeEntity(
-//			@NonNull EmployeeDTO employee, @NonNull @Context MapStructMapper.MapStructCycleTrackingContext context)
-//	{
-//		return new EmployeeEntity(employee, context);
-//	}
-
 	@ToString class MapStructCycleTrackingContext
 	{
 		private Map<Object, Object> knownInstances = new IdentityHashMap<Object, Object>();
